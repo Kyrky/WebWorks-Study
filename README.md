@@ -1,8 +1,8 @@
 # Project Structure
 
-This document outlines the structure of the `src` directory for the project.
+This document outlines the structure of the project.
 
-## `root folder` Root
+## `RootFolder` Root
 - **`package.json`**: file with info about versions.
 - **`package-lock.json`**: also, like a package.json, info about versions.
 - **`node_modules`**: node modules...
