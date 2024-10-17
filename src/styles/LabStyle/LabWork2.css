@@ -1,0 +1,69 @@
+.labwork2-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.labwork2-list-item:first-of-type {
+    font-weight: bold;
+}
+
+.labwork2-link:last-child {
+    color: red;
+}
+
+.labwork2-input-disabled {
+    background-color: gray;
+}
+
+.labwork2-div > .labwork2-paragraph {
+    font-weight: bold;
+}
+
+.labwork2-link[href^="https"] {
+    color: green;
+}
+
+.labwork2-input[type="text"] {
+    border: 1px solid blue;
+}
+
+.labwork2-list-item:first-child,
+.labwork2-list-item:last-child {
+    font-size: 24px;
+}
+
+.labwork2-div .labwork2-paragraph {
+    font-size: 16px;
+}
+
+.labwork2-checkbox:checked {
+    background-color: lightblue;
+}
+
+.labwork2-list-item > .labwork2-link {
+    text-decoration: underline;
+}
+
+.labwork2-list-item:nth-child(even) {
+    font-weight: bold;
+}
+
+.labwork2-input:not(.labwork2-input-disabled) {
+    background-color: yellow;
+}
+
+.labwork2-div > .labwork2-paragraph:first-child {
+    font-size: 24px;
+}
+
+.labwork2-list-item.special + .labwork2-list-item {
+    text-decoration: line-through;
+}
+
+.labwork2-paragraph::first-letter {
+    font-size: 36px;
+}
+
+.labwork2-link::after {
+    content: ' ↗';
+}
