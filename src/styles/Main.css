@@ -159,3 +159,95 @@ button:hover {
         width: 95%;
     }
 }
+
+/* */
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .main-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .recent-posts, .featured-works {
+    margin-bottom: 40px;
+  }
+  
+  .posts-container, .works-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .post, .work {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h3, .work h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .post p, .work p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .main-footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #e0e0e0;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

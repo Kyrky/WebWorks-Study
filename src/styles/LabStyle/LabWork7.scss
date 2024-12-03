@@ -1,0 +1,71 @@
+$primary-color: #ff6f61;
+$background-color: #1a202c;
+$text-color: #ffffff;
+$border-radius: 12px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+@mixin button-styles($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.card {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: $border-radius;
+  padding: 20px;
+  box-shadow: $box-shadow;
+
+  &__header {
+    background-color: $primary-color;
+    padding: 10px;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  &__content {
+    padding: 10px;
+
+    &__message {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    &__decoration {
+      margin: 10px auto;
+      text-align: center;
+
+      .card__canvas {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid $text-color;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 10px;
+
+    .card__button {
+      @include button-styles($primary-color, darken($primary-color, 10%));
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.planner-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    max-width: 1200px; /* Максимальна ширина сторінки */
+    margin: 0 auto; /* Центрування сторінки */
+  }
+  
+  .planner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .planner-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .header-inputs {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .header-inputs div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .planner-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Головні колонки */
+    gap: 20px; /* Відступи між секціями */
+  }
+  
+  .planner-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .to-do {
+    grid-column: 1 / 2;
+  }
+  
+  .day {
+    grid-column: 2 / 3;
+  }
+  
+  .day h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Враховує padding у ширині */
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .planner-grid {
+      grid-template-columns: 1fr; /* Одна колонка на малих екранах */
+    }
+  
+    .planner-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-inputs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

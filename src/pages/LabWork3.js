@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/LabStyle/LabWork3.css'; // Подключаем CSS
+import '../styles/LabStyle/LabWork3.css'; 
 
 const LabWork3 = () => {
   const videos = [

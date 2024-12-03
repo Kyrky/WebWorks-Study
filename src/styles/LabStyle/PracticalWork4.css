@@ -1,0 +1,99 @@
+.keyboard-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Основні клавіші + нумпад */
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-keys {
+  display: grid;
+  gap: 10px;
+}
+
+.key-row {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr); /* 15 колонок для основної клавіатури */
+  gap: 5px;
+  justify-content: center;
+}
+
+.numpad {
+  display: grid;
+  gap: 10px;
+}
+
+.numpad-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 клавіші у ряд для нумпада */
+  gap: 5px;
+}
+
+.key {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+}
+
+.key:active {
+  background-color: #ccc;
+  transform: scale(0.95);
+}
+
+.key.large {
+  grid-column: span 2; /* Для клавіш, які займають 2 колонки */
+}
+
+.key.extra-large {
+  grid-column: span 11; /* Наприклад, для пробілу */
+}
+
+.numpad-key {
+  background-color: #e6f7ff;
+}
+
+.numpad-key:hover {
+  background-color: #d0efff;
+}
+
+.numpad-key:active {
+  background-color: #b0d8ff;
+}
+
+@media (max-width: 768px) {
+  .keyboard {
+    grid-template-columns: 1fr; /* Нумпад переноситься під основні клавіші */
+  }
+
+  .key-row {
+    grid-template-columns: repeat(15, 1fr); /* Залишається 15 колонок */
+  }
+
+  .numpad-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
